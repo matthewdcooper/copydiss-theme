@@ -55,7 +55,7 @@
 			<nav id="site-navigation" class="main-navigation">
 				<?php 
 				
-				$menu_name = get_theme_mod('copydiss_nav_menu');
+				$menu_name = get_theme_mod('copydiss_navigation_menu');
 				if ($menu_name) {
 					wp_nav_menu( array(
 						'menu' => $menu_name,

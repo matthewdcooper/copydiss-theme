@@ -1,6 +1,14 @@
 <?php
 function copydiss_customize_header( $wp_customize ) {
 
+    $menu_choices = array();
+    foreach (wp_get_nav_menus() as $menu) {
+        $arr = $menu->to_array();
+        if (array_key_exists('name', $arr)) {
+            $menu_choices[$arr['name']] = $arr['name'];
+        }
+    }
+
     $wp_customize->add_section ( 'copydiss_header_theme_section', array(
         'title' => __('Header', 'copydiss'),
         'priority' => 29,
@@ -84,6 +92,25 @@ function copydiss_customize_header( $wp_customize ) {
             'label' => __( 'Contact Phone', 'copydiss' ),
             'section' => 'copydiss_header_theme_section',
             'settings' => 'copydiss_contact_phone'
+        )
+    ) ) ;
+
+
+    // header menu
+    $wp_customize->add_setting( 'copydiss_navigation_menu' , array(
+        'default' => '',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( 
+        $wp_customize,
+        'copydiss_navigation_menu',
+        array (
+            'label' => __( 'Navigation Menu', 'copydiss' ),
+            'section' => 'copydiss_header_theme_section',
+            'settings' => 'copydiss_navigation_menu',
+            'type' => 'select',
+            'choices' => $menu_choices
         )
     ) ) ;
 
