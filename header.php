@@ -19,7 +19,6 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'copydiss' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
@@ -29,15 +28,15 @@
 
 
 			<?php if (is_front_page()): ?>
-
 				<div class="message">
-					<p><?php get_theme_mod('copydiss_front_page_message'); ?></p>
+					<p><?php echo get_theme_mod('copydiss_front_page_message'); ?></p>
 				</div>
 				
 			<?php endif; ?>
 
 			<div class="contact useful-box">
-				<p><?php echo get_theme_mod('copydiss_contact_address'); ?></p>
+				<p><?php echo get_theme_mod('copydiss_contact_address_first_line'); ?><br />
+				<?php echo get_theme_mod('copydiss_contact_address_second_line'); ?></p>
 
 				<p>
 					<a class="contact_link" href="mailto:<?php echo get_theme_mod('copydiss_contact_email'); ?>">

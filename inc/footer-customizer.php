@@ -48,10 +48,7 @@ function copydiss_customize_footer( $wp_customize ) {
         )
     ) ) ;
 
-
-
-
-
+    
     // company number 
     $wp_customize->add_setting( 'copydiss_company_number' , array(
         'default' => '',
