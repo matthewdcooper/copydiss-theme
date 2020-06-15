@@ -6,9 +6,6 @@ body {
     padding-bottom: 15rem !important;
 }
 
-.site-main {
-}
-
 .site-footer {
     bottom: 0;
     display: flex;
@@ -29,4 +26,8 @@ body {
 
 .site-info > * {
     margin: 1rem;
+}
+
+.menu-footer-container ul {
+    list-style-type: none;
 }
