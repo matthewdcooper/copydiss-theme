@@ -14,3 +14,19 @@ body {
 	margin: auto;
 	max-width: 50rem;
 }
+
+/* LINKS */
+
+a {
+	color: $link-col;
+}
+
+a:hover {
+	color: black;
+	text-shadow: 0px 0px 2px $primary-col;
+}
+
+a:visited {
+	color: $link-col;
+}
+

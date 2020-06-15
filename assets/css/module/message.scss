@@ -35,3 +35,24 @@
 	color: #aaa;
 	text-decoration: underline;
 }
+
+
+.box-shadow {
+	box-shadow: 10px 16px 15px 0px rgba(0, 0, 0, 0.38);
+	line-height: 0 !important; // prevents wp figure creating unwanted white-space below images
+}
+
+.center-images {
+	display: flex;
+	align-items: center;
+}
+
+.useful-box {
+	border-radius: 0.4em;
+	border: solid 2px $secondary-col;
+	background-color: white;
+	max-width: 90%;
+	width: 15rem;
+	margin: auto;
+	padding: 1rem;
+}
