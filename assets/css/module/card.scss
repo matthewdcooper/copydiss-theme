@@ -1,0 +1,55 @@
+.card-container > div {
+	display: flex !important;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.card {
+	margin: 1rem;
+	width: 22em;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in();
+}
+
+.card img {
+	width: 22em;
+	text-align: center;
+}
+
+.card h2 {
+	padding: 0;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 0.3px;
+} 
+
+.card p {
+	text-align: left;
+}
+
+.card ul {
+	text-align: left;
+	line-height: 1.6em;
+}
+.card:hover {
+	margin-top: 0.5rem; // these values are relative to .card margin
+	margin-bottom: 1.5rem;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out();
+}
+
+.card a {
+	text-decoration: none;
+}
+
+.card a:hover {
+	font-weight: normal;
+}
+
+.card a:hover h2 {
+	text-decoration: underline;
+}

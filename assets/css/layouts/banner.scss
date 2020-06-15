@@ -1,0 +1,93 @@
+
+@media (min-width: 1200px) {
+	.site-branding {
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+	}
+
+	#masthead .message {
+		width: 40rem !important;
+	}
+
+}
+
+#masthead .message {
+	width: 20rem;
+}
+
+.site-header {
+	background-color: $secondary-col;
+	padding: 4rem 0;
+}
+
+.site-branding {
+	background-color: white;
+	padding: 1.5rem 0 0 0;
+}
+
+.site-branding * {
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo > * {
+	margin: 0;
+	padding: 0;
+}
+
+.logo img {
+	max-width: 16rem;
+}
+
+.site-title a {
+	text-decoration: none;
+	color: $secondary-col;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-shadow: 2px 2px 2px $shadow-col;
+}
+
+
+
+.main-navigation {
+	border-bottom: solid black 3px;
+	width: 60%;
+	margin: 1rem auto 0.1rem auto;
+	padding: 0;
+	grid-column-start: span 4;
+}
+
+.main-navigation ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+}
+
+.main-navigation ul li {
+	list-style-type: none;
+	margin: 0.2rem 1rem;
+	flex-grow: 1;
+	text-align: center;
+}
+
+
+
+
+.contact {
+	grid-column-start: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: $secondary-col;
+}
