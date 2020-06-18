@@ -138,7 +138,7 @@ add_action( 'widgets_init', 'copydiss_widgets_init' );
  * Enqueue scripts and styles.
  */
 function copydiss_scripts() {
-	wp_enqueue_style( 'copydiss-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'copydiss-style', get_stylesheet_uri(), array(), COPYDISS_VERSION );
 
 	// vendor scripts. only uncomment if you have files in assets/js/vendor 
 	// wp_enqueue_script( 'copydiss-vendor-scripts', get_template_directory_uri() . '/assets/js/vendor.min.js', array(), '20151215', true );
