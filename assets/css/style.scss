@@ -20,7 +20,11 @@
         display: block !important;
     }
 
-    .message p, .message {
+    .message p {
+        max-width: 30em;
+    }
+
+    .message {
         max-width: 30em;
     }
  }
