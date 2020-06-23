@@ -192,7 +192,11 @@ body{margin-bottom:0 !important;padding-bottom:15rem !important}
 .container{max-width:50rem;margin:auto}
 .search-results h1{margin:-5rem auto 2rem auto;color:white;text-transform:uppercase;font-weight:normal}
 .search-results .entry-summary{margin:-2rem 0 0 2rem;min-height:2rem}
-@media screen and (min-width:37.5em){.menu-toggle{display:none}
+#internet_explorer{position:absolute;top:0;color:#a70101;width:100%}
+#internet_explorer p{text-align:center}
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none){#internet_explorer{display:block !important}
+.message p{max-width:30em}
+}@media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:-webkit-box;display:-ms-flexbox;display:flex}
 }@media(min-width:1200px){.site-branding{display:grid;grid-template-columns:1fr 2fr 1fr}
 #masthead .message{width:40rem !important}
