@@ -196,11 +196,11 @@ body{margin-bottom:0 !important;padding-bottom:15rem !important}
 #hamburger-menu-overlay{background-color:var(--overlay-color);position:absolute;top:var(--header-height);bottom:0;width:100vw;-webkit-transition:opacity var(--transition-speed) linear;transition:opacity var(--transition-speed) linear;opacity:0;z-index:-1}
 .hamburger-overlay-visible{opacity:.8 !important;z-index:1 !important}
 .prevent-scroll{height:100%;max-height:100%;overflow:hidden}
-.menu-main-container ul{display:block;position:absolute;top:var(--header-height);left:calc(-1 * var(--menu-width));height:calc(100vh - var(--header-height));width:var(--menu-width);text-align:left;-webkit-transition:left var(--transition-speed) linear;transition:left var(--transition-speed) linear;z-index:2;list-style-type:none;background-color:var(--menu-bg-col);padding:0;margin:0;overflow-y:auto}
-.menu-main-container ul li{padding:1rem;border-bottom:solid var(--menu-item-border-col) 2px;font-size:1.5rem}
-.menu-main-container ul li a{text-decoration:none;width:100%;display:inline-block}
-.menu-main-container ul li:hover{background-color:var(--menu-item-selected-col)}
-.menu-main-container li a::after{content:"";display:inline-block;height:2rem;width:2rem;background:transparent url("assets/img/chevron-right.svg") no-repeat;float:right;opacity:.5}
+#site-navigation div ul{display:block;position:absolute;top:var(--header-height);left:calc(-1 * var(--menu-width));height:calc(100vh - var(--header-height));width:var(--menu-width);text-align:left;-webkit-transition:left var(--transition-speed) linear;transition:left var(--transition-speed) linear;z-index:2;list-style-type:none;background-color:var(--menu-bg-col);padding:0;margin:0;overflow-y:auto}
+#site-navigation div ul li{padding:1rem;border-bottom:solid var(--menu-item-border-col) 2px;font-size:1.5rem}
+#site-navigation div ul li a{text-decoration:none;width:100%;display:inline-block}
+#site-navigation div ul li:hover{background-color:var(--menu-item-selected-col)}
+#site-navigation div li a::after{content:"";display:inline-block;height:2rem;width:2rem;background:transparent url("assets/img/chevron-right.svg") no-repeat;float:right;opacity:.5}
 #hamburger-toggle:checked ~ div ul{left:0;-webkit-transition:left var(--transition-speed) linear;transition:left var(--transition-speed) linear}
 /*! below adapted from https://github.com/jonsuh/hamburgers */.hamburger{padding:15px 15px;display:inline-block;cursor:pointer;-webkit-transition-property:opacity,-webkit-filter;transition-property:opacity,-webkit-filter;transition-property:opacity,filter;transition-property:opacity,filter,-webkit-filter;-webkit-transition-duration:.15s;transition-duration:.15s;-webkit-transition-timing-function:linear;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}
 .hamburger:hover{opacity:.7}
@@ -228,9 +228,9 @@ body{margin-bottom:0 !important;padding-bottom:15rem !important}
 }@media(min-width:1200px){.site-branding{display:grid;grid-template-columns:1fr 2fr 1fr}
 #masthead .message{width:40rem !important}
 #btn-hamburger,#no-js-hamburger{display:none}
-.menu-main-container ul{position:static;height:auto;width:auto;background-color:white;display:-webkit-box;display:-ms-flexbox;display:flex}
-.menu-main-container ul li{border-bottom:0}
-.menu-main-container li a::after{display:none}
+#site-navigation div ul{position:static;height:auto;width:auto;background-color:white;display:-webkit-box;display:-ms-flexbox;display:flex}
+#site-navigation div ul li{border-bottom:0}
+#site-navigation div li a::after{display:none}
 .main-navigation{border-bottom:solid black 3px;width:60%;margin:1rem auto .1rem auto;padding:0;grid-column-start:span 4}
 .main-navigation ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0;padding:0}
 .main-navigation ul li{list-style-type:none;margin:.2rem 1rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;text-align:center}
