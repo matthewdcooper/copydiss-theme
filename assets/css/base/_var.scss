@@ -19,3 +19,16 @@ $link-active-col: #3A7818;
 
 
 $message-background: #478047;
+
+/* for use with hamburger menu */
+/* todo: use scss variables instead */
+:root {
+  --header-height: 4rem;
+  --menu-width: 80vw;
+  --menu-bg-col: #ddd;
+  --menu-item-border-col: #eee;
+  --menu-item-selected-col: #fff;
+  --overlay-color: black;
+  --transition-speed: 0.1s;
+}
+

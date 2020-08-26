@@ -53,6 +53,23 @@
 
 
 			<nav id="site-navigation" class="main-navigation">
+
+  <button
+    id="btn-hamburger"
+    class="hamburger hamburger--collapse hidden"
+    type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+  <input type="checkbox" id="hamburger-toggle" class="hidden"/>
+
+  <noscript>
+    <label id="no-js-hamburger" for="hamburger-toggle">&#9776;</label>
+  </noscript>
+
+
 				<?php 
 				
 				$menu_name = get_theme_mod('copydiss_navigation_menu');
@@ -62,6 +79,8 @@
 					) );
 				}
 				?>
+
+                                <div id="hamburger-menu-overlay"></div>
 
 			</nav><!-- #site-navigation -->
 		</div><!-- .site-branding -->
